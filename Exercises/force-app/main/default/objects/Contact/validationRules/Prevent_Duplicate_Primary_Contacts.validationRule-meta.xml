@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Duplicate_Primary_Contacts</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Level__c, &apos;Primary&apos;),
+    NOT(ISBLANK(Account.Phone))
+)</errorConditionFormula>
+    <errorMessage>This Account already has an Primary Contact</errorMessage>
+</ValidationRule>

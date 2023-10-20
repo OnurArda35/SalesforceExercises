@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>QueueableContactUpdate</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexTrigger</name>
+	</types>
+	<types>
+		<members>Contact</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Contact.Prevent_Duplicate_Primary_Contacts</members>
+		<name>ValidationRule</name>
+	</types>
+	<version>58.0</version>
+</Package>
